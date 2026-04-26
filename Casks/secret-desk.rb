@@ -1,6 +1,6 @@
 cask "secret-desk" do
-  version "1.0.0"
-  sha256 "c3221eeee60713160a8ab68be261cff0a0e829f0e075b3ea7bf2e6f36d5d2cb5"
+  version "1.1.0"
+  sha256 "9f4c0082d175384adc878d577a9cf46df0ae494c8a4fa120c0270f2c27efa1b8"
 
   url "https://github.com/akshitkrnagpal/secret-desk/releases/download/v#{version}/SecretDesk-darwin-arm64-#{version}.zip",
       verified: "github.com/akshitkrnagpal/secret-desk/"
@@ -15,9 +15,9 @@ cask "secret-desk" do
 
   zap trash: [
     "~/Library/Application Support/SecretDesk",
-    "~/Library/Caches/com.electron.secretdesk",
+    "~/Library/Caches/io.akshit.secretdesk",
     "~/Library/Logs/SecretDesk",
-    "~/Library/Preferences/com.electron.secretdesk.plist",
-    "~/Library/Saved Application State/com.electron.secretdesk.savedState",
+    "~/Library/Preferences/io.akshit.secretdesk.plist",
+    "~/Library/Saved Application State/io.akshit.secretdesk.savedState",
   ]
 end
