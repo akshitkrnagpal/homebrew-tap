@@ -5,21 +5,21 @@
 class Revcat < Formula
   desc "The RevenueCat CLI"
   homepage "https://github.com/akshitkrnagpal/revcat"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.2.0/revcat_0.2.0_darwin_amd64.tar.gz"
-      sha256 "939ac7398a538ca306cf5b7021c758461d9129c910c7bf17c3b1b2cd01fddcc6"
+      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.3.0/revcat_0.3.0_darwin_amd64.tar.gz"
+      sha256 "fe817c4da99d1d69e976768eb457836f91d6f04b74ea6eaafc37aa9dc340e520"
 
       define_method(:install) do
         bin.install "revcat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.2.0/revcat_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3b24cf78e8bb93a847591ff066a7705b188c2315543ebcf48695f3e5af4da6e6"
+      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.3.0/revcat_0.3.0_darwin_arm64.tar.gz"
+      sha256 "cdf04554b6cd6762cc7411ccf274a4a9b2ce4c9752a630b2e3391faa99656433"
 
       define_method(:install) do
         bin.install "revcat"
@@ -29,15 +29,15 @@ class Revcat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.2.0/revcat_0.2.0_linux_amd64.tar.gz"
-      sha256 "5a1c6a12438a55456e9cbf2c0bdf7912fc4f8b978483a09b10d947e9b1d1178e"
+      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.3.0/revcat_0.3.0_linux_amd64.tar.gz"
+      sha256 "79cd59e7171ecbecf4aeb526018e95448f9865ecaf0dcea57fa24d70717956db"
       define_method(:install) do
         bin.install "revcat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.2.0/revcat_0.2.0_linux_arm64.tar.gz"
-      sha256 "dcef14e116ff70a71d8c3ae50d683e9dd71f6b48d80436744e5cfa92830248e6"
+      url "https://github.com/akshitkrnagpal/revcat/releases/download/v0.3.0/revcat_0.3.0_linux_arm64.tar.gz"
+      sha256 "40df5e2598fd4f21eeb0a4c2ab4e6825caf5a39766065c64c1b7bd3695f15b56"
       define_method(:install) do
         bin.install "revcat"
       end
