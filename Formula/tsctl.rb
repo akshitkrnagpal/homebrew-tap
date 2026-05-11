@@ -6,26 +6,26 @@
 class Tsctl < Formula
   desc "Terraform-like CLI for managing Typesense"
   homepage "https://github.com/akshitkrnagpal/tsctl"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.2/tsctl_0.3.2_darwin-x64.tar.gz"
-      sha256 "fa2fda51a3d7eff1db52685a1f0450b23792e08a3e805767c5510ce77eaac393"
+      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.3/tsctl_0.3.3_darwin-x64.tar.gz"
+      sha256 "3fedcb5f824d4ba07db711b4ec9457329fbf18ad7d1c6f7087499c5a5ee02a85"
     elsif Hardware::CPU.arm?
-      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.2/tsctl_0.3.2_darwin-arm64.tar.gz"
-      sha256 "4391b10da3b6006c624e4a1515f61234ee4310cce5e2f49649892207188eca73"
+      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.3/tsctl_0.3.3_darwin-arm64.tar.gz"
+      sha256 "1045bfd9444ae31d355ad0afd1885d644f872f4e2acc3bbb0823370261a8ed6b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.2/tsctl_0.3.2_linux-x64.tar.gz"
-      sha256 "c896379c0ac13f3f10fbda1a7d617e941f324cf44ad8eedaae8f6c686ede1d68"
+      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.3/tsctl_0.3.3_linux-x64.tar.gz"
+      sha256 "288d6a0dce95babbc80c163fbae0a7828d294a20ef15340df7482e0d882e9c97"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.2/tsctl_0.3.2_linux-arm64.tar.gz"
-      sha256 "f82fd5ce3e8cac9256860a3f85bbe65aafd72f0b64ac14949f37abb50604acf8"
+      url "https://github.com/akshitkrnagpal/tsctl/releases/download/v0.3.3/tsctl_0.3.3_linux-arm64.tar.gz"
+      sha256 "276c1e519639ba4c9454f9600bbdc14dc6dd7422d014ca83785b0d02dfd704d6"
     end
   end
 
