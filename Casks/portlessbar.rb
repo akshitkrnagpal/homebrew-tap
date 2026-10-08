@@ -1,6 +1,6 @@
 cask "portlessbar" do
-  version "0.3.0"
-  sha256 "f9ad1ad9ff473572d34f519279e7206f1402c915c0681f8328ad7f56e48e527f"
+  version "0.3.1"
+  sha256 "72b5095d6ff815699a6dbc8b0ff93f3df8096b990737090030e84a6919a2bc44"
 
   url "https://github.com/akshitkrnagpal/portlessbar/releases/download/v#{version}/PortlessBar-#{version}-universal.zip"
   name "PortlessBar"
