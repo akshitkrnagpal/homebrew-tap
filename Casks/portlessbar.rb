@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "portlessbar" do
-  version "0.4.0"
-  sha256 "3051bfb67cbdecf4a9c736a1ea81465c7f16443265359632032ccf4af959a3fb"
+  version "0.4.1"
+  sha256 "44fc9b8d75d47a098ea17c61f5a441cca9cbbbede4627b42862fb17f7a02066f"
 
   url "https://github.com/akshitkrnagpal/portlessbar/releases/download/v#{version}/PortlessBar-#{version}-universal.zip"
   name "PortlessBar"
