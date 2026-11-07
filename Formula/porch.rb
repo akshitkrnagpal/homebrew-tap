@@ -7,22 +7,22 @@ class Porch < Formula
   desc "Stable named URLs for local dev servers, across your machines"
   homepage "https://github.com/akshitkrnagpal/porch"
   license "MIT"
-  version "0.3.2"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.3.2/porch-0.3.2-aarch64-apple-darwin.tar.gz"
-      sha256 "5671da151bc9a75b96bab65f0bbe991b8e96ee554324ed91d895ee972f5366b5"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.4.0/porch-0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9dca805fa2b96c054d741d4507607edc4776e6f074c312eabcbaef48921a04ef"
     elsif Hardware::CPU.intel?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.3.2/porch-0.3.2-x86_64-apple-darwin.tar.gz"
-      sha256 "570ec47c5c0e48b899c87895fe72ee86f9796c80b00da5ae4c50ce77e9550115"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.4.0/porch-0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "1b4b44e2232d5ee5b1bd7320f5eb44bb47612e86ed5ae802a0773387b818b2f7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.3.2/porch-0.3.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9e40fbdf74f7483de61a891afd8bedc7ad532aa139f0d3ec31eab10d030640fc"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.4.0/porch-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "bb15e8c2e609784181a17ba42d0c197402424917781a6c08e0fd07961b695b95"
     end
   end
 
