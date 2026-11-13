@@ -7,25 +7,25 @@ class Porch < Formula
   desc "Stable named URLs for local dev servers, across your machines"
   homepage "https://github.com/akshitkrnagpal/porch"
   license "MIT"
-  version "0.5.1"
+  version "0.5.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-aarch64-apple-darwin.tar.gz"
-      sha256 "0b1f8f463b7cde673d7e22cd9e5f253d0a093c55796773f83a4b2c2a7e34ef0e"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-aarch64-apple-darwin.tar.gz"
+      sha256 "57f668d0f5acd8a9cfac8ada8e60d1f358f65f173fe81bedff04949321ece3f3"
     elsif Hardware::CPU.intel?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-x86_64-apple-darwin.tar.gz"
-      sha256 "2872c3761f05cb6e13b94b7a26a2102f7d5e6ac0b28e394dab473fb1523acc7a"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-x86_64-apple-darwin.tar.gz"
+      sha256 "9c6e1cbc6a622bbbc42fea033171513f2ba20bb1360e2790e41228072480177e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b3b0e8a3fdbfabb5d97a7840084a53f2565ea5bf497f4ba5ca0b18bd1b5b6ef9"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a151a61055fc3efe4bf96abcc6d5b2a2c29503fc65cd6e6a6ea956f8ea6d71e7"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "eb70f8d52744fab3162e4aa15ddd0b9ef4cd39509fba8c915a0d5f9eff17a873"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "9f26c571ff00b04b72380fac6832de6360402daee151b5b0934c7d7428a490e9"
     end
   end
 
