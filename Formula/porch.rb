@@ -7,25 +7,25 @@ class Porch < Formula
   desc "Stable named URLs for local dev servers, across your machines"
   homepage "https://github.com/akshitkrnagpal/porch"
   license "MIT"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.0/porch-0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "f8f7aa296d425437d2cd85265221c880d08ece045deb764dab99a713b4d95ae2"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "0b1f8f463b7cde673d7e22cd9e5f253d0a093c55796773f83a4b2c2a7e34ef0e"
     elsif Hardware::CPU.intel?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.0/porch-0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "0d6e7921b877908f8d27538c5d03e07bcf856b601bccdb669404d627cec0d3e7"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "2872c3761f05cb6e13b94b7a26a2102f7d5e6ac0b28e394dab473fb1523acc7a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.0/porch-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "23ea67c7caeea6a9777c7da24fde0e6ee6307f43864c380191cd9886253c5cb5"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b3b0e8a3fdbfabb5d97a7840084a53f2565ea5bf497f4ba5ca0b18bd1b5b6ef9"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.0/porch-0.5.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "254956a0cd1e35ac3fdfe944f37ba1f30054246fc8b1d42c7ddd616e0cd48507"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.1/porch-0.5.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "eb70f8d52744fab3162e4aa15ddd0b9ef4cd39509fba8c915a0d5f9eff17a873"
     end
   end
 
