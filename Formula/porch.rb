@@ -7,25 +7,25 @@ class Porch < Formula
   desc "Stable named URLs for local dev servers, across your machines"
   homepage "https://github.com/akshitkrnagpal/porch"
   license "MIT"
-  version "0.5.2"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-aarch64-apple-darwin.tar.gz"
-      sha256 "57f668d0f5acd8a9cfac8ada8e60d1f358f65f173fe81bedff04949321ece3f3"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.6.0/porch-0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f095b9054ba1715e4d91ea1d9bdc45726cfdeef304d505bf080c509366841789"
     elsif Hardware::CPU.intel?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-x86_64-apple-darwin.tar.gz"
-      sha256 "9c6e1cbc6a622bbbc42fea033171513f2ba20bb1360e2790e41228072480177e"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.6.0/porch-0.6.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e017d2fe846eac2264693bdbce9646ffd89393d65548166505f3e711d7344eb0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a151a61055fc3efe4bf96abcc6d5b2a2c29503fc65cd6e6a6ea956f8ea6d71e7"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.6.0/porch-0.6.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "83fdf1f308aed17fab4c6d1f8e004437cc2a096134d90c48da1eb878bd7b9282"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.5.2/porch-0.5.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9f26c571ff00b04b72380fac6832de6360402daee151b5b0934c7d7428a490e9"
+      url "https://github.com/akshitkrnagpal/porch/releases/download/v0.6.0/porch-0.6.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "08232f708067f1cbf0291e4acd964b83be356fd4042eb41880b1100507857bf5"
     end
   end
 
